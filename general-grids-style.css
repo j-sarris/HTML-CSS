@@ -1,0 +1,88 @@
+.container {
+    border: 1px solid brown;
+    display: grid;
+    grid-template-columns: 100px 500px 300px;
+    grid-template-rows: 100px 50px;
+    /* grid-template: 100px 50px /  100px 500px 300px; */
+    margin-bottom: 20px;
+    /* try various justify-content possibilities */
+    /* start, end, center, space-evenly/around/between */  
+    justify-content: center;
+  }
+
+  
+
+  .box {
+    border: 1px solid green;
+  }
+
+  .containerB {
+    display: grid;
+    border: 2px blue solid;
+    width: 400px;
+    height: 500px;
+    grid-template: 1fr 1fr 1fr / 3fr 50% 1fr;
+    margin-bottom: 20px;
+    /* rewrite using repeat() */
+    /* remove width and try  minmax(200px, 400px)  */
+    /* row-gap, column-gap, gap */
+    /* span multiple rows with  grid-row-start and grid-row-end with grid-row */
+    /* grid-row: 2 / span 3; */
+
+    /* ultra shorthand version   grid-area: 2 / 3 / 4 / span 5;
+        grid-row-start / grid-column-start / grid-row-end / grid-column-end
+    */
+
+    /* demonstrate overlap and z-index */
+  }
+
+  .boxB {
+    background-color: beige;
+    color: black;
+    border-radius: 5px;
+    border: 2px dodgerblue solid;
+  }
+
+  .containerC {
+    display: grid;
+    border: 2px rgb(255, 174, 0) solid;
+    max-width: 900px;
+    margin: auto;
+    gap: 10px;
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "left right"
+      "footer footer";
+    grid-template-rows: 150px 200px 600px 200px;
+    grid-template-columns:  1fr 2fr;
+  }
+
+  header {
+    background-color: dodgerblue;
+    grid-area: header;
+  }
+
+  nav {
+    background-color: beige;
+    grid-area: nav;
+  }
+
+  .info {
+    background-color: dodgerblue;
+    grid-area: left;
+  }
+
+  .image {
+    border: 1px solid red;
+  }
+
+  .services {
+    background-color: beige;
+    grid-area: right;
+  }
+
+  footer {
+    background-color: dodgerblue;
+    grid-area: footer;
+  }
