@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ΣΑΕΚ Γαλατσίου</title>
+
+    <style>
+      
+      section, span{
+        margin-bottom: 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Αξιολόγηση μαθήματος</h1>
+    <h2>Εργαλεία Ανάπτυξης Εφαρμογών Διαδικτύου</h2>
+
+    <form method="GET">
+      <section>
+        <label for="name">Το όνομά σας</label>
+        <input type="text" name="name" id="name" required>
+      </section>
+
+      <section>
+        <label for="hours">Πόσες ώρες εβδομαδιαίως διδάσκεται το μάθημα?</label>
+        <input type="number" name="hours" id="amount" min="1" max="10">
+      </section>
+
+      <section>
+        <label for="grade">Πώς θα κρίνατε το μάθημα</label>
+        <br>
+        <span>Απογοητευτικό</span>
+        <input type="range" id="grade" name="grade" value="3" min="1" max="5">
+        <span>Εξαιρετικό</span>
+      </section>
+
+      <section class="material">
+        <span>Τι υλικό παρείχε το μάθημα?</span>
+        <label for="notes">Σημειώσεις</label>
+        <input type="checkbox" name="material" id="material" value="notes">
+        <label for="assignments">Εργασίες</label>
+        <input type="checkbox" name="material" id="assignments" value="assignments">
+        <label for="presentations">Παρουσιάσεις</label>
+        <input type="checkbox" name="material" id="presentations" value="presentations">
+      </section>
+
+      <section>
+        <span>Θα προτείνατε το μάθημα?</span>
+        <input type="radio" name="recomend" id="yes" value="yes" checked>
+        <label for="yes">Ναι</label>
+        <input type="radio" name="recomend" id="no" value="no">
+        <label for="no">Όχι</label>
+        <input type="radio" name="recomend" id="maybe" value="maybe">
+        <label for="maybe">Ίσως</label>
+      </section>
+
+      <section>
+        <label for="semaster">Σε ποιο εξάμηνο των σπουδών είστε?</label>
+        <select name="semaster" id="semaster">
+          <option value="first">Α'</option>
+          <option value="second">Β'</option>
+          <option value="third">Γ'</option>
+          <option value="fourth">Δ'</option>
+        </select>
+      </section>
+
+      <section>
+        <label for="course">Ποιο άλλο μάθημα ενδιαφέρεστε να παρακολουθήσετε?</label>
+        <input list="courses" id="course" name="course">
+        <datalist id="courses">
+          <option value="Python"></option>
+          <option value="PHP"></option>
+          <option value="MySQL"></option>
+          <option value="Java"></option>
+        </datalist>
+      </section>
+
+      <section class="extra-info">
+        <label for="extra">Άλλα γενικά σχόλια?</label>
+        <br>
+        <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+      </section>
+
+      <section>
+        <input type="submit" value="Υποβολή">
+      </section>
+    </form>
+  </body>
+</html>
