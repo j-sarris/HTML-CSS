@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS (via CDN) -->
+
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Content goes here -->
+    <!-- Navigation Bar 
+      Include My Portfolio 
+            About me
+            Skills 
+            Projects
+            Contact-->
+
+
+    <!-- Hero Section  -->
+    <header> <!-- Background blue,  text white & centered margin top and bottom -->
+        <div class="container">
+            <h1>Hello, I'm [Your Name]</h1> <!-- Make it appear bigger -->
+            <p class="lead">A Web Developer passionate about building beautiful websites</p>
+            <a href="#contact">Contact Me</a> <!-- Looks like a button -->
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about"> <!-- top and bottom margin -->
+        <div class="container">
+            <h2>About Me</h2> <!-- Center text -->
+            <!-- Two columns equal size, side by side -->
+            <p>I am a passionate web developer with expertise in HTML, CSS, and JavaScript. I love creating responsive
+                and user-friendly websites. My goal is to build websites that not only look good but also provide an
+                excellent user experience.</p>
+
+
+            <img src="images/moss.jpg" class="img-fluid rounded-circle" alt="Your Photo">
+
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+
+            <!-- Three columns equal size, side by side -->
+            <h4>HTML</h4>
+            <p>Building semantic and accessible web pages.</p>
+
+
+            <h4>CSS</h4>
+            <p>Styling websites with modern techniques.</p>
+
+
+            <h4>JavaScript</h4>
+            <p>Building interactive and dynamic web applications.</p>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+
+            <!-- Three columns equal size, side by side -->
+            <!-- Projects as cards with image and body with title, text and blue button link -->
+
+
+            <img src="images/itcrowd.jpg" class="card-img-top" alt="Project 1">
+
+            <h5 class="card-title">Project One</h5>
+            <p class="card-text">A brief description of project one.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+
+
+
+
+
+            <img src="images/Denholmn-796555.webp" class="card-img-top" alt="Project 2">
+
+            <h5 class="card-title">Project Two</h5>
+            <p class="card-text">A brief description of project two.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+
+
+
+
+            <img src="images/it.png" class="card-img-top" alt="Project 3">
+
+            <h5 class="card-title">Project Three</h5>
+            <p class="card-text">A brief description of project three.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact"> <!-- Dark background, white centered text, margins" -->
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit">Submit</button> <!-- Light button" -->
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer> <!-- Dark background, white centered text, margins" -->
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+    </footer>
+
+
+
+
+
+
+    <!-- Bootstrap JS and dependencies (via CDN) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
