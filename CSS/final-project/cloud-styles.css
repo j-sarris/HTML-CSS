@@ -15,7 +15,7 @@
   }
   
   .header {
-    background: url(img/cloud-technology.jpg) center; 
+    background: url("img/cloud-technology.jpg") center; 
     background-size: cover;
     height: 800px;
     text-align: center; 
